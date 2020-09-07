@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="inner"></p>
+    <p id="inner2"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <input class="form-control text-center" id="randomPin" type="text">
+                    <button id="pinGenerateButton" class="generate-btn">Generate Pin</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <div class="d-flex justify-content-center">
+                        <div class="form-control p1-3" id="output"> 
+                            <div id="current"></div>
+                        </div>
+                    </div>
+                    <div class="numbers">
+                        <div class="calc-body">
+                            <div class="calc-button-row">
+                              <div class="button">7</div>
+                              <div class="button">8</div>
+                              <div class="button">9</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div class="button">4</div>
+                              <div class="button">5</div>
+                              <div class="button">6</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div class="button">1</div>
+                              <div class="button">2</div>
+                              <div class="button">3</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="operator" id="backspase"><</div>
+                                <div class="button">0</div>
+                                <div class="operator" id="all-clear">C</div>
+                            </div>
+                            <div>
+                                <button type="submit" class="submit-btn" id="submit">Submit</button>
+                                <p class="action-left"><span id="try">3</span> <span id="left">try left</span></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notify-section mt-2">
+            <p id="fail" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+        </div>
+    </div>
+
+ <script src="index.js"></script>
+</body>
+</html>
